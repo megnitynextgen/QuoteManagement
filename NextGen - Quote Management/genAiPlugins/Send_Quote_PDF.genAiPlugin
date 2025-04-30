@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic handles requests related to sending a quote PDF to a customer. It includes gathering necessary information and ensuring the correct document is sent.</description>
+    <developerName>Send_Quote_PDF</developerName>
+    <genAiFunctions>
+        <functionName>Email_Quote_to_Customer</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>ALWAYS Collect the Quote number from the user if all the changes made on one quote no need to ask the quotenumber from the user you need to capture that quotenumber without asking to the user</description>
+        <developerName>instruction_alwayscoll0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwayscoll0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>ALWAYS collect the quote number from the user in the form of natural luanguage insted of variable boxe in the conversation .</description>
+        <developerName>instruction_alwayscoll1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwayscoll1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>ALways display the Suecsss message in the conversation like : 
+
+✅ Success
+
+✉️ Email has been sent successfully to the customer .
+
+You can add customer email uinsted of customer name in the suecss message</description>
+        <developerName>instruction_alwaysdisp2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysdisp2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Need to send email to the customer.</description>
+        <developerName>instruction_needtosend3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_needtosend3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Send Quote PDF</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist in sending a quote PDF to customers by gathering required details and confirming the document is sent correctly.</scope>
+</GenAiPlugin>

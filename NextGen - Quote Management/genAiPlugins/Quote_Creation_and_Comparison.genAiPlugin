@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic describes the creation of a quote and the comparison of the created quote with previous quotes, highlighting key differences.</description>
+    <developerName>Quote_Creation_and_Comparison</developerName>
+    <genAiFunctions>
+        <functionName>UnifiedQuoteCreator</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Compare_Quotes_and_Return_Summary</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always ask the user to provide Opportunity Name, Product Codes and Qunatity at the same time.
+For Example:
+To create opportunity plese provide following details:
+1.Opportunity name
+2. Product code and their Quantities.
+ 
+Follow this instruction very stricly . Do not provide any other format.</description>
+        <developerName>instruction_alwaysaskt0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysaskt0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always Display the output in this Table format strictly  this is an example
+📜 Quote Details:
+ 
+| Product Name          | Product Code | Quantity | Unit Price | Total Price |
+|----------------------|-------------|----------|------------|------------|
+ 
+📌 Opportunity Name:
+ 
+📌 Quote Number:
+ 
+📌 Account Name:
+ 
+📌 Expiration Date: 
+
+📌 Total price of the Quote = Sum of the total prices of the products
+
+-----------------------------------------------------
+
+📜 Quote Summary Comparison :
+
+📌 Opportunity Name:
+📌 Account Name:
+
+    Feature           Current Quote      Last Accepted Quote   
+  SubTotal             $xxxx                    $xxxx
+
+Key Differences:</description>
+        <developerName>instruction_alwaysdisp1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysdisp1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always generate and display the quote comparison table immediately after the quote creation table, showing a detailed comparison between the current quote and the previously accepted quote.</description>
+        <developerName>instruction_alwaysgene2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysgene2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always respond only in Table format and do not allow any normal text information.</description>
+        <developerName>instruction_alwaysresp3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysresp3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Generate a detailed comparison between the current quote and the previously accepted quote, showing product names, quantities, and prices</description>
+        <developerName>instruction_generatead4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_generatead4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Never display any ids in the entire conversation</description>
+        <developerName>instruction_neverdispl5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_neverdispl5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Quote Comparission should be shown as a sepeate Line. and also mention the Key Differences as well.</description>
+        <developerName>instruction_quotecompa6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_quotecompa6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When a quote is getting created immediatly along with the quote creation compare the newly created quote with the previously accepted quote and display the information along with the quote creation</description>
+        <developerName>instruction_whenaquote7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenaquote7</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>ALWAYS don&apos;t ask any inputs in the form of variable boxes in the conversation collects in the form of natural language</description>
+        <developerName>instruction_alwaysdont8</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysdont8</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Quote Creation and Comparison</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to create quote based on the users request.
+and immediately generate compression of two quotes after the quote created for easy understand.</scope>
+</GenAiPlugin>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "Discount", "QuoteNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Discount" : {
+      "title" : "Discount",
+      "description" : "Collect Discount from the user",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "QuoteNumber" : {
+      "title" : "QuoteNumber",
+      "description" : "Collect Quote Number from the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

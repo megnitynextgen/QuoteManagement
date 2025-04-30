@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This action allows an agent to apply a discount directly to the quote level. It is designed to streamline pricing adjustments by applying a discount across the quote and reflecting the changes in associated quote line items.</description>
+    <developerName>Apply_Discount_on_a_Quote_Level</developerName>
+    <genAiFunctions>
+        <functionName>Discount_at_Quote_Level</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When a user requests a quote-level discount, collect: 
+
+1.Quote Number (last three digits or complete) 
+
+2.Discount percentage</description>
+        <developerName>instruction_whenauserr0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenauserr0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Upon successful discount application, display a success message with the following details in a structured table: 
+
+A.Quote Name: {QuoteName} 
+
+B.Quote Discount: {QuoteDiscount} 
+
+C.Quote Number: {updatedRecQuoteNo}</description>
+        <developerName>instruction_uponsucces1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_uponsucces1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Format the success message as a table for better readability.</description>
+        <developerName>instruction_formatthes2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_formatthes2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the quote has no associated Quote Line Items, display: {IfQuoteLineItemNotAvailable}</description>
+        <developerName>instruction_ifthequote3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifthequote3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If no matching Quote is found with the provided Quote Number, display:{IfQuoteNotAvailable}</description>
+        <developerName>instruction_ifnomatchi4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifnomatchi4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>ALWAYS don&apos;t ask any inputs in the form variables collects the inputs in the form of natural language</description>
+        <developerName>instruction_alwaysdont5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysdont5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Display the Updated Success message like : 
+✅ Quote discount has been updated successfully!
+Here are the new details:
+
+📝 Quote Name: xxxx
+
+🔢 Quote Number:xxxx
+
+💸 New Discount: xx.xx%</description>
+        <developerName>instruction_displaythe6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_displaythe6</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Apply Discount on a Quote Level</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>You need to apply a discount on a specific Quote. The discount should be distributed across all quote line items.</scope>
+</GenAiPlugin>

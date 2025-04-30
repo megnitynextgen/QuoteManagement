@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Sends the quote PDF to the customer via email when requested by the agent</description>
+    <invocationTarget>EmailContacttoCustomer</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Email Quote to Customer</masterLabel>
+    <progressIndicatorMessage>Sending Quote to Customer....</progressIndicatorMessage>
+</GenAiFunction>

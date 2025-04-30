@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a quote and returns output as summary text.</description>
+    <invocationTarget>UnifiedQuoteCreator</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>UnifiedQuoteCreator</masterLabel>
+    <progressIndicatorMessage>Quote Creating..</progressIndicatorMessage>
+</GenAiFunction>

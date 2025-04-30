@@ -1,0 +1,51 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "IfQuoteLineItemnotAva" : {
+      "title" : "IfQuoteLineItemnotAva",
+      "description" : "\"If the provided Quote does not have any associated Quote Line Items, inform the customer politely.\n",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "IfQuoteNotAvailable" : {
+      "title" : "IfQuoteNotAvailable",
+      "description" : "If no matching Quote Number is found, kindly inform the user and ask them to double-check the provided Quote Number for accuracy",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "QuoteDiscount" : {
+      "title" : "QuoteDiscount",
+      "description" : "Display Discount to the User.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "QuoteName" : {
+      "title" : "QuoteName",
+      "description" : "Display Quote Name to the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "updatedRecQuoteNo" : {
+      "title" : "updatedRecQuoteNo",
+      "description" : "Provide Quote Number",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
