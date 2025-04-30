@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This action allows agents to delete a specific product from a quote. The agent provides the last two digits of the quote number to identify the quote, then selects the product name to remove. The flow checks if the quote and product exist before deleting the product.</description>
+    <developerName>Delete_Product_from_Quote</developerName>
+    <genAiFunctions>
+        <functionName>Delete_QuoteLine_By_Quote_Last3Digits_Product</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Confirmation Message :
+Are you sure You want to delete this product (Name of the product) from the Quote(Quote Number)
+Also don&apos;t include ending in the message just say quote number</description>
+        <developerName>instruction_confirmati0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_confirmati0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Conversation should be User Friendly</description>
+        <developerName>instruction_conversati1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_conversati1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Delete Product From the quote</description>
+        <developerName>instruction_deleteprod2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_deleteprod2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the product is deleted display the below message
+Product(Name of the Product) deleted  successfully from the Quote(Quote Numer).
+Also don&apos;t include ending in the message just say quote number</description>
+        <developerName>instruction_whenthepro3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenthepro3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When the user wants to delete a product first ask for there Quote Number. And when te quote exists ask for the confirmation again to delete the product once the customer confirms the deletion of the product then go ahead and delete the product.</description>
+        <developerName>instruction_whentheuse4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whentheuse4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Delete Product from Quote</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Identify the quote and product, then delete the product if it exists. Provide confirmation or an error message if not found.</scope>
+</GenAiPlugin>

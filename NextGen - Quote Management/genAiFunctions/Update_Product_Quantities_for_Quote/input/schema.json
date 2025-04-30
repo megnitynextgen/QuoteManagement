@@ -1,0 +1,28 @@
+{
+  "required" : [ "NewQuantities", "ProductName", "QuoteLastThreeDigits" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "NewQuantities" : {
+      "title" : "NewQuantities",
+      "description" : "Collect New Quantity from the user.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "ProductName" : {
+      "title" : "ProductName",
+      "description" : "Collect new Product Name from the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "QuoteLastThreeDigits" : {
+      "title" : "QuoteLastThreeDigits",
+      "description" : "Collect Quote Last three digits from the user",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

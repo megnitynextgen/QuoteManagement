@@ -1,0 +1,21 @@
+{
+  "required" : [ "newQuoteNumber", "opportunityName" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "newQuoteNumber" : {
+      "title" : "New Quote Number",
+      "description" : "Collect New Quote Number from the user ",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "opportunityName" : {
+      "title" : "Opportunity Name",
+      "description" : "Collect Opportunity Name from the User",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,14 @@
+{
+  "required" : [ "quoteNumbers" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "quoteNumbers" : {
+      "title" : "quoteNumbers",
+      "description" : "Collect Quote Number from the user.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

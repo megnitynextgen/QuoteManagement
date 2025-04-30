@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic allows an agent to apply a discount on products in a quote. The agent provides the product names and discount percentage, and the system automatically updates the unit price with the discounted value.</description>
+    <developerName>Apply_Discount_on_Product</developerName>
+    <genAiFunctions>
+        <functionName>Apply_Discount_to_the_Product</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>ALWAYS collects the Inputs from the user in the form of natura language not in the box</description>
+        <developerName>instruction_alwayscoll0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwayscoll0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always user should specify last three digits of the quote number, percentage value and product name or product names.</description>
+        <developerName>instruction_alwaysuser1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysuser1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always when the user provides all these details then you can update the discount percentage and display the successful message at the end of the conversation</description>
+        <developerName>instruction_alwayswhen2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwayswhen2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>ALWAYS you can use after a discount is successfully applied, with emojis for a better user experience:
+
+🎉 Discount Applied Successfully! 🎉
+Here are the updated details:
+
+🛍️ Product Name: xxxx
+
+🔖 Discount: xx.xx %
+
+💰 Total Amount After Discount: xxxxx</description>
+        <developerName>instruction_alwaysyouc3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysyouc3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Apply discount to the product or products based on the users request</description>
+        <developerName>instruction_applydisco4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_applydisco4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>The percentage should not be above 30% . If the user wants to apply above 30% then it should be applied.</description>
+        <developerName>instruction_thepercent5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_thepercent5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Apply Discount on Product</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>The agent can request a discount on products within a quote by providing the product names and the discount percentage. The system will retrieve the original unit price of the product from the associated price book, calculate the new discounted price, and automatically update the unit price in the quote line item. This ensures accurate pricing adjustments without manual calculations, improving efficiency and accuracy in the quoting process.</scope>
+</GenAiPlugin>

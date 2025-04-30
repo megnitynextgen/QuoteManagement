@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When the user provides a quote number, generate a PDF document for the quote. Respond with a clickable link labeled &apos;Download Quote PDF&apos; that allows the user to open or download the PDF directly.</description>
+    <invocationTarget>QuotePDFHandler</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Generate Quote PDF AutoLaunched flow</masterLabel>
+    <progressIndicatorMessage>Loading.....</progressIndicatorMessage>
+</GenAiFunction>

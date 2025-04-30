@@ -1,0 +1,36 @@
+{
+  "required" : [ "opportunityName", "productCodes", "quantities" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "opportunityName" : {
+      "title" : "Opportunity Name",
+      "description" : "Collect Opportunity Name from the User",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "productCodes" : {
+      "title" : "Product Codes",
+      "description" : "Collect Product Codes from the user",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "quantities" : {
+      "title" : "Quantities",
+      "description" : "Collects Quantities From the User ",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__integerType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
